@@ -1,0 +1,284 @@
+/* @import url('https://fonts.googleapis.com/css?family=Exo:400,700'); */
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+}
+body{
+    background-color:#001C30;
+    /* display:flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items:center;
+    */
+}
+
+
+
+nav{
+    background-color:#001C30;
+    position:fixed;
+   text-align: center;
+   top:0;
+   z-index: 3;
+   width:100%;
+}
+.heading{
+    color:white;
+    display:block;
+    text-align: center;
+    width:230px;
+    font-size: 50px;
+    text-shadow: 3px 3px 5px #176B87;
+    overflow: hidden; /* Ensures the contenst is not revealed until the animation */
+    border-right: 1px solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 3.5s steps(40, end) ,blink-caret .75s step-end infinite ;
+    
+}
+/* The typing effect  */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    100% { border-color: white; }
+  }
+
+/* .heading:hover{
+    color:#FCF876;
+   
+}  */
+#fort{
+    color:#001C30;
+    font-size: 10px;
+    font-family: cursive;
+    display:inline;
+    background-color:white;
+    padding:2px 2px 2px 2px;
+    letter-spacing: 0.5px;
+}
+
+.content{
+   
+    margin-top: 100px;
+}
+
+.sec{
+    
+    text-align: center;
+    color: white;
+    
+}
+.sec h1{
+    font-size: 30px;
+    text-shadow: 2px 2px 5px #176B87;
+}
+.sec a{
+    font-size: 10px;
+    text-decoration: none;
+    background-color:#176B87;
+    color:white;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    transition: 0.4s;
+  
+}
+
+.sec a:hover{
+    background: transparent;
+    border:2px dashed gold;
+    transition: 0.4s;
+
+}
+
+.text{ 
+    text-align:center;
+    font-size: 15px;
+    margin-top: 2%;
+   color:white;
+    }
+
+.t2m{
+    /* font-size: 15px; */
+    text-align: center;
+    justify-items: center;
+}
+#t2m2{
+    display: none ;
+}
+.input_txt{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+ .ed{
+
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align:centre;
+    height:50px;
+    width:300px;
+    border:2px solid white;
+    padding:1px 4px 1px 4px;
+    border-radius:5px;
+    
+}
+.ed button{
+    text-align:centre;
+    margin:1.5px 10px 1.5px 10px;
+    padding : 0px;
+    font-size: larger;
+    width:50%;
+    background-color:#176B87;
+    color: white;
+    border:2px solid  #176B87;
+   border-radius:5px;  
+}
+#first{
+    color:white;
+    font-size: 15vw;
+    font-family: cursive;
+    margin-left: 35%;
+}
+#main_div2{
+    display: none;
+}
+.container2{
+  
+    position: absolute;
+    padding: 20px;
+    margin:0px 28px;
+    width:700px;
+    left:40%;
+    transform: translate(-30%) !important;
+
+  
+}
+
+.main-user-info{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    padding:20px 0;
+}
+
+.user-input-box{
+    display:flex;
+    flex-wrap:wrap;
+    padding-bottom:15px;
+
+}
+.user-input-box label{
+    width:95%;
+    color:white;
+    font-size:20px;
+    font-weight:400;
+    margin:5px 0;
+
+}
+.user-input-box #input-image{
+    color:white;
+    padding:8px;
+
+}
+.user-input-box input{
+    height:40px;
+    width:95%;
+    
+    border-radius: 7px;
+    border:2px solid  #176B87;
+    outline:none ;
+    padding:0 10px;
+    
+    
+}
+#download{
+    position: relative;
+    left:45%;
+    width:40%;
+    height:40px;
+    transform: translate(-40%);
+    content:black;
+    font-size: medium;
+    font-style: bold;
+    border-radius: 7px;
+    border:2px solid  #176B87;
+}
+/* .user-input-box:nth-child(3){
+    display:none;
+} */
+#output-text{
+    resize: none;
+    width:95%;
+    border-radius: 7px;
+    outline:none ;
+    padding:0 10px;
+    border:2px solid  #176B87;
+   
+}
+
+::placeholder{
+    
+    color:#001C30 ;
+    opacity: 0.7;
+}
+
+.form-submit-btn input{
+    cursor:pointer;
+}
+.form-submit-btn{
+    margin-top: 30px;
+}
+.form-submit-btn input{
+    display:block;
+    position: relative;
+    width:60%;
+    left:43%;
+    height:50%;
+    transform: translate(-40%);
+    margin-top: 10px;
+    padding:20px;
+    font-size: 20px;
+    border:none;
+    border-radius:3px;
+    color:white;
+    background:#176B87;
+}
+.form-submit-btn input:hover{
+    background: transparent;
+    border:2px dashed gold;
+    transition: 0.4s;
+}
+@media(max-width:600px){
+    .container{
+        min-width:280px;
+    }
+    .container2{
+        min-width:280px;
+    }
+    .user-input-box{
+        margin-bottom: 12px;
+        width:100%;
+    }
+    
+    .main-user-info{
+        max-width: 380px;
+        overflow: auto;
+    }
+    .main-user-info::-webkit-scrollbar{
+        width:0px;
+    }
+    .ed{
+        min-width:280px;
+    }
+}

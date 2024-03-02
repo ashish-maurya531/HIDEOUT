@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIDEOUT</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+    <nav>
+        <h1 class="heading">HIDEOUT</h1>
+        <div class="fort-class">
+        <p id="fort">Fortifying Your Digital Fortress with Unbreakable Encryption</p>
+    </div>
+</nav>
+
+<div class="content">
+    <div class="sec">
+        <h1>Encrypt Or Decrypt </h1>
+        <br>
+        <a href="index.html">TEXT</a>
+        <a href="image.html">IMAGE</a>
+        <a href="voice.html">VOICE</a>
+    </div> 
+    <div class="text">
+        <h1 class="t2m" id="t2m">Image → Emojis</h1>
+        <h1 class="t2m" id="t2m2">Image ← Emojis</h1>
+        <br>
+        <div class="input_txt">
+        <div class="ed"><button id="ed1" onclick="reappearElement()">Encrypt</button>
+                <button id="ed2" onclick="removeElement()">Decrypt</button></div>
+    </div>
+  
+    </div>
+
+    <div class="container2"  id="main_div">
+  
+        <form action="#">
+            <div class="main-user-info">
+                <div class="user-input-box">
+                    <label for="input-text">1. Upload Image To Encrypt</label>
+                    <input type="file" name="input-text" id="input-image" placeholder="Choose a file" accept=".jpg, .jpeg, .png">
+                </div>
+                <div class="user-input-box">
+                    <label for="pass">2. Enter Key</label>
+                    <input type="password" name="pass" id="pass" placeholder="Enter key">
+                </div>
+                <div class="user-input-box">
+                    <label for="output-text">3. Encrypted Output</label>
+                    <textarea id="output-text" name="output-text" rows="2"  placeholder="Emojis"></textarea>
+                    
+                </div>
+            </div>
+           
+            <div class="form-submit-btn">
+                <input type="submit" id="form-submitted" value="Encrypt">
+            </div>
+        </form>
+    
+    </div>
+
+    <div class="container2" id="main_div2">
+        <form action="#">
+            <div class="main-user-info">
+                <div class="user-input-box">
+                    <label for="input-text">1. Enter Emoji To Decrypt</label>
+                    <input type="text" name="input-text" id="input-text" placeholder="Enter Encrypted text here">
+                </div>
+                <div class="user-input-box">
+                    <label for="pass">2. Enter Key</label>
+                    <input type="password" name="pass" id="pass" placeholder="Enter key">
+                </div>
+                <div class="user-input-box">
+                    <label for="output-text">3. Decrypted Output</label>
+                    <button type="button" id="download">Download Image</button>
+                    
+                </div>
+            </div>
+           
+            <div class="form-submit-btn">
+                <input type="submit" id="form-submitted" value="Decrypt">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+        
+</body>
+</html>
